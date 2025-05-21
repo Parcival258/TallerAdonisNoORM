@@ -3,15 +3,15 @@ import EditorialesController from "#controllers/Http/EditorialesController";
 
 const Editorial = new EditorialesController();
 
-//rutas
+//rutas crud
 
 //obtner
 router.get(`/obtenerEditoriales`, Editorial.obtenerEditoriales)
 //obtener por id
-router.get(`/obtenerEditorialId/:id`, Editorial.obtenerEditorialId)
+router.get(`/obtenerEditorialesId/:id`, Editorial.obtenerEditorialId)
 //insertar
-router.post(`/insertarEditorial`, Editorial.insertarEditorial)
+router.post(`/insertarEditoriales`, Editorial.insertarEditorial)
 //actualizar
-router.put(`/actualizarEditorial/:id`, Editorial.actualizarEditorial)
+router.put(`/actualizarEditoriales/:id`, Editorial.actualizarEditorial)
 //eliminar
-router.delete(`/eliminarEditorial/:`, Editorial.eliminarEditorial)
+router.delete(`/eliminarEditoriales/:`, Editorial.eliminarEditorial)
